@@ -2,44 +2,67 @@
 <html>
 
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+    <link rel="manifest" href="./Favicon/site.webmanifest">
+    <link rel="mask-icon" href="./Favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
     <title>Tomer Ben-Jonathan</title>
     <link rel="stylesheet" href="./dist/style.css">
 </head>
 
 <body>
-    <h1>Test</h1>
-    <ul>
-        <li><a href="#book">book</a></li>
-        <li><a href="#place">place</a></li>
-    </ul>
-    <img
-           id="book" src="https://m.media-amazon.com/images/I/81FKUJTEO5L.jpg" : #book>
-    <h1><a href="https://www.amazon.com/Rational-Male-Rollo-Tomassi/dp/1492777862" target="_blank">Link to the book</a>
-    </h1>
-    <h2>Description:</h2>
-    <p>"The Bible of the Red Pill", The Rational Male® is a rational and pragmatic approach to intersexual dynamics</p>
-    <p>and the social and psychological underpinnings of intergender relations. The book is the compiled, ten-year core
-        writing of author/blogger Rollo Tomassi from therationalmale.com. </p>
-    <h2>Quote:</h2>
-    <p> "hypergamy is a selected-for survival mechanism"</p>
-    <h2 id="place">Place I've enjoyed visiting: : </h2>
-    <h4> Jerusalem</h4>
-    <h2>Description:</h2>
-    <p>Jerusalem is a city located in modern-day Israel and is considered by many to be one of the holiest places in the
-        world.</p>
-    <p>Jerusalem is a site of major significance for the three largest monotheistic religions: Judaism, Islam and
-        Christianity, and both Israel and Palestine have claimed Jerusalem as a capital city.</p>
-    <h1><img src="https://m.issta.co.il/_resources/images//destinations/israel/jerusalem//1280X768/1.jpg"></h1>
-    <h1><a href="https://www.google.com/maps/place/Jerusalem/data=!4m2!3m1!1s0x1502d7d634c1fc4b:0xd96f623e456ee1cb?sa=X&ved=2ahUKEwio8uHo4I_7AhUI-4UKHUuRC8QQ8gF6BAgIEAE"
-            target="_blank">Link to Jerusalem in google maps</a></h1>
+    <nav>
+        <h2 class="logo">Tomer Ben-Jonathan</h2>
+        <ul class="wrapper__links">
+            <li class="nav-link"><a href="#book">book</a></li>
+            <li class="nav-link"><a href="#place">place</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Hi, my name is Tomer, I'm 33 years old and live in Ramat Gan.</p>
+        <div class="wrapper">
+            <div class="fav-book card">
+                <h2>The book I chose to share is "The Rational Male"</h2>
+                <a href="https://www.amazon.com/Rational-Male-Rollo-Tomassi/dp/1492777862" target="_blank"><img
+                        id="book" class="img"
+                        src="https://i0.wp.com/therationalmale.com/wp-content/uploads/2017/07/img_3176.jpg?fit=600%2C400&ssl=1"
+                        alt="book-image"></a>
+
+                <h2>Description:</h2>
+                <p>"The Bible of the Red Pill", The Rational Male® is a rational and pragmatic approach to intersexual
+                    dynamics
+                </p>
+                <p>and the social and psychological underpinnings of intergender relations. The book is the compiled,
+                    ten-year
+                    core
+                    writing of author/blogger Rollo Tomassi from therationalmale.com. </p>
+
+                <h2>Why I chose this book:</h2>
+                <p>It gave me a better understanding about intersexual dinamic and I would like to share it with others.
+                </p>
+
+                <h2>Quote:</h2>
+                <p> "hypergamy is a selected-for survival mechanism"</p>
+            </div>
+
+            <div class="fav-location card">
+                <h2 id="place">Place I've enjoyed visiting: Jerusalem</h2>
+                <a href="https://www.google.com/maps/place/Jerusalem/data=!4m2!3m1!1s0x1502d7d634c1fc4b:0xd96f623e456ee1cb?sa=X&ved=2ahUKEwio8uHo4I_7AhUI-4UKHUuRC8QQ8gF6BAgIEAE"
+                    target="_blank"><img class="img"
+                        src="https://m.issta.co.il/_resources/images//destinations/israel/jerusalem//1280X768/1.jpg"></a>
+                <h2>Description:</h2>
+                <p>Jerusalem is a city located in modern-day Israel and is considered by many to be one of the holiest
+                    places in
+                    the
+                    world.</p>
+                <p>Jerusalem is a site of major significance for the three largest monotheistic religions: Judaism,
+                    Islam
+                    and
+                    Christianity, and both Israel and Palestine have claimed Jerusalem as a capital city.</p>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
