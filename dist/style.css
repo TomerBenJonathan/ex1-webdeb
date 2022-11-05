@@ -26,6 +26,7 @@ nav {
   align-items: center;
   padding: 0 60px;
   position: fixed;
+  z-index: 99;
 }
 nav .logo {
   color: white;
@@ -74,6 +75,7 @@ th {
   display: flex;
   flex-direction: row;
   gap: 24px;
+  margin-bottom: 0;
 }
 .wrapper__404 {
   display: flex;
