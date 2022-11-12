@@ -19,28 +19,44 @@
         <nav class="nav">
             <ul>
                 <h5>Navigation</h5>
-                <a href="#book">My Favorite Book</a>
-                <a href="#place">A Place I Enjoyed</a>
-                <a href="#feedback">Feedback Form</a>
-                <a href="#feedback">This Project on GitHub</a>
-                <a href="https://www.google.com/maps/place/Usha+School/@32.0901953,34.8130566,17z/data=!3m1!4b1!4m5!3m4!1s0x151d4bca85756fff:0x4ccc7666f959c091!8m2!3d32.0901867!4d34.8152525"
-                    target="_blank">Elementary School</a>
-                <a href="https://www.google.com/maps/place/School+Amit+Bar+Ilan/@32.0697961,34.847627,17z/data=!3m1!4b1!4m5!3m4!1s0x151d4a127c9a742d:0x226b341a3b389d70!8m2!3d32.0697961!4d34.8498157"
-                    target="_blank">High Schol</a>
+                <a class="link link__light-bg" href="#book">My Favorite Book</a>
+                <a class="link link__darker-bg" href="#place">A Place I Enjoyed</a>
+                <a class="link link__light-bg" href="#feedback">Feedback Form</a>
+
+                <a class="link link__darker-bg" href="https://github.com/TomerBenJonathan/webDev/tree/main/EX-2"
+                    target="_blank">This Project on GitHub<img class="icon" src="./icons/link.png" alt="link-icon"></a>
+
+                <a class="link link__light-bg"
+                    href="https://www.google.com/maps/place/Usha+School/@32.0901953,34.8130566,17z/data=!3m1!4b1!4m5!3m4!1s0x151d4bca85756fff:0x4ccc7666f959c091!8m2!3d32.0901867!4d34.8152525"
+                    target="_blank">Elementary School<img class="icon" src="./icons/link.png" alt="link-icon">
+                </a>
+                <a class="link link__darker-bg"
+                    href="https://www.google.com/maps/place/School+Amit+Bar+Ilan/@32.0697961,34.847627,17z/data=!3m1!4b1!4m5!3m4!1s0x151d4a127c9a742d:0x226b341a3b389d70!8m2!3d32.0697961!4d34.8498157"
+                    target="_blank">High School<img class="icon" src="./icons/link.png" alt="link-icon"></a>
             </ul>
         </nav>
 
-        <div class="header"><a class="logo" href="#start-section">Tomer Ben-Jonathan</a></div>
-        <div class="content">
+        <div class="header">
+            <h5 style="color: lightblue;">Tomer Ben-Jonathan's website</h5>
+            <a class="link" href="#start-section"><img class="logo" src="./imgs/logo.jpg" alt="logo"></a>
 
+        </div>
+
+
+        <div class="content">
             <article>
-                <div id="start-section" style= "background-image: url(./imgs/hamburger.jpg); background-repeat: no-repeat; background-size: cover; text-align: center;
+                <div id="start-section" style="background-image: url(./imgs/hamburger.jpg); background-repeat: no-repeat; background-size: cover; text-align: center;
                 padding: 200px 0; color: white;">
                     <div class="wrapper__column">
                         <h1>Hello,<br> Welcome to my website!</h1>
                         <h6>I'm Tomer Ben-Jonathan and I'm a student in WebVev bootcamp. <br> I'm also a
                             professional trainer and Clinical dietitian. </h6>
-                        <h6> My top 3 favorite foods are: Pizza, Sushi and Hamburger.</h6>
+                        <div class="text-and-icons">
+                            My top 3 favorite foods are: Pizza <img class="icon__large" src="./icons/pizza.png"
+                                alt="pizza-icon"> ,Sushi<img class="icon__large" src="./icons/nigiri.png"
+                                alt="sushi-icon"> and Hamburger<img class="icon__large" src="./icons/burger.png"
+                                alt="burger-icon">
+                        </div>
                     </div>
                 </div>
             </article>
@@ -83,16 +99,20 @@
                 <div id="place" class="card">
                     <div class="wrapper__column">
                         <div class="gallery">
+
+                            <div>
+                                <img class="img__small" alt="jerusalem-image"
+                                    src="https://www.elal.com/magazine/wp-content/uploads/2020/02/Jerusalem_Tower-of-David_806.jpg">
+                            </div>
+
                             <img class="img__small" alt="jerusalem-image"
                                 src="https://m.issta.co.il/_resources/images//destinations/israel/jerusalem//1280X768/1.jpg">
                             <img class="img__small" alt="jerusalem-image"
-                                src="https://m.issta.co.il/_resources/images//destinations/israel/jerusalem//1280X768/1.jpg">
+                                src="https://meyda.education.gov.il/files/pop/1560/%D7%99%D7%95%D7%9D-%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D.jpg">
                             <img class="img__small" alt="jerusalem-image"
-                                src="https://m.issta.co.il/_resources/images//destinations/israel/jerusalem//1280X768/1.jpg">
+                                src="https://www.toraland.org.il/media/5271791/depositphotos_176476334_original.jpg?quality=60&width=595&crop=0,0,595,330">
                             <img class="img__small" alt="jerusalem-image"
-                                src="https://m.issta.co.il/_resources/images//destinations/israel/jerusalem//1280X768/1.jpg">
-                            <img class="img__small" alt="jerusalem-image"
-                                src="https://m.issta.co.il/_resources/images//destinations/israel/jerusalem//1280X768/1.jpg">
+                                src="https://upload.wikimedia.org/wikipedia/commons/c/c4/David%27s_Tower_1.jpg">
                         </div>
                         <a href="https://www.google.com/maps/place/Jerusalem/data=!4m2!3m1!1s0x1502d7d634c1fc4b:0xd96f623e456ee1cb?sa=X&ved=2ahUKEwio8uHo4I_7AhUI-4UKHUuRC8QQ8gF6BAgIEAE"
                             target="_blank"><button>A link to Google maps</button></a>
@@ -115,7 +135,7 @@
             </article>
 
             <section id="feedback" class="card">
-                <form>
+                <form onclick="handleSubmit(event)">
                     <h4>Feedback Form</h4>
                     <p>I'd love to hear your honset thoughts!<p>
                             <section class="wrapper__column form-section">
@@ -128,8 +148,9 @@
                                     </div>
                                     <div class="input">
                                         <label for="phonenumber">phone number:</label>
-                                        <input type="number" name="phone number" id="phonenumber"
-                                            placeholder="your phone number" required>
+                                        <input type="tel" name="phone number" id="phonenumber"
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="your phone number"
+                                            required>
                                     </div>
                                 </div>
                                 <div class="wrapper__inline">
@@ -173,7 +194,6 @@
                                                 <label for="5">5</label>
                                                 <input type="radio" name="rating" id="5">
                                             </div>
-
                                         </div>
 
                                         <label type="select" for="selection">How did you find this website?</label>
@@ -191,7 +211,7 @@
                                 </div>
                             </section>
                             <div class="wrapper__inline">
-                                <button>Submit</button>
+                                <button type="submit">Submit</button>
                                 <button>Reset</button>
                             </div>
 
@@ -202,6 +222,14 @@
             <p>Tomer Ben-Jonathan - tomer.jonathan@grunitech.com<p>
         </footer>
     </div>
+
+    <script>
+        const form = document.getElementById('form')
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault()
+        })
+    </script>
 
 </body>
 
