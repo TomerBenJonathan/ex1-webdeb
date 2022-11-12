@@ -238,6 +238,9 @@ body {
   background-color: white;
   font-weight: bold;
 }
+.page .absu {
+  position: absolute;
+}
 
 .page-dark {
   display: grid;
