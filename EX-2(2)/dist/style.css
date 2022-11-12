@@ -11,7 +11,7 @@ body {
 }
 .page .nav {
   grid-area: nav;
-  background-color: aqua;
+  background-color: lightblue;
   padding: 24px;
   justify-content: center;
 }
@@ -38,9 +38,13 @@ body {
   text-decoration: none;
   list-style: none;
 }
+.page p {
+  margin: 0;
+}
 .page button {
   padding: 12px 16px;
-  background-color: cyan;
+  background-color: darkblue;
+  color: white;
   border-radius: 8px;
   border: none;
   width: 100%;
@@ -67,8 +71,30 @@ body {
   display: flex;
   flex-direction: column;
 }
+.page .input {
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page label {
+  font-weight: bold;
+}
+.page input[type=text],
+.page input[type=date],
+.page input[type=email],
+.page input[type=number],
+.page select,
+.page textarea {
+  cursor: default;
+  width: 200px;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 2px solid lightblue;
+}
 .page .form-section {
-  border: 1px solid lightblue;
+  border: 6px solid lightblue;
   border-radius: 8px;
   padding: 16px;
   margin: 8px 0;
@@ -102,14 +128,21 @@ body {
   flex-direction: column;
   gap: 24px;
 }
+.page .wrapper__column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .page .wrapper__inline {
   display: flex;
   flex-direction: row;
+  gap: 16px;
+  align-items: center;
 }
-.page .input {
-  width: 300px;
+.page .wrapper__inline-start {
   display: flex;
   flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
 }
 .page .footer {
   width: 100vw;
@@ -136,7 +169,7 @@ body {
   background-color: #090420;
   padding: 24px;
   justify-content: center;
-  color: beige;
+  color: white;
 }
 .page-dark .header {
   grid-area: header;

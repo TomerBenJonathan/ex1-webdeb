@@ -30,8 +30,21 @@
             </ul>
         </nav>
 
-        <div class="header"><a class="logo" href="./index.html">Tomer Ben-Jonathan</a></div>
+        <div class="header"><a class="logo" href="#start-section">Tomer Ben-Jonathan</a></div>
         <div class="content">
+
+            <article>
+                <div id="start-section" style= "background-image: url(./imgs/hamburger.jpg); background-repeat: no-repeat; background-size: cover; text-align: center;
+                padding: 200px 0; color: white;">
+                    <div class="wrapper__column">
+                        <h1>Hello,<br> Welcome to my website!</h1>
+                        <h6>I'm Tomer Ben-Jonathan and I'm a student in WebVev bootcamp. <br> I'm also a
+                            professional trainer and Clinical dietitian. </h6>
+                        <h6> My top 3 favorite foods are: Pizza, Sushi and Hamburger.</h6>
+                    </div>
+                </div>
+            </article>
+
             <article>
                 <div id="book" class="card">
                     <div class="wrapper__column">
@@ -108,38 +121,80 @@
                             <section class="wrapper__column form-section">
                                 <h4>Personal Details</h4>
                                 <div class="wrapper__inline">
-                                    <label for="fullname">Full name:</label>
-                                    <input type="text" name="fullname" id="fullname" placeholder="your name here">
-                                    <label for="phonenumber">phone number:</label>
-                                    <input type="number" name="phone number" id="phonenumber"
-                                        placeholder="your phone number">
+                                    <div class="input">
+                                        <label for="fullname">Full name:</label>
+                                        <input type="text" name="fullname" id="fullname" placeholder="your name here"
+                                            required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="phonenumber">phone number:</label>
+                                        <input type="number" name="phone number" id="phonenumber"
+                                            placeholder="your phone number" required>
+                                    </div>
                                 </div>
                                 <div class="wrapper__inline">
-                                    <label for="Email">Email:</label>
-                                    <input type="email" name="Email" id="Email" placeholder="example@place.com">
-                                    <label for="Date of birth">Date of birth:</label>
-                                    <input type="date" name="Date of birth" id="Date of birth" placeholder="dd/mm/yyyy">
+                                    <div class="input">
+                                        <label for="Email">Email:</label>
+                                        <input type="email" name="Email" id="Email" placeholder="example@place.com"
+                                            required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="Date of birth">Date of birth:</label>
+                                        <input type="date" name="Date of birth" id="Date-of-birth" value="2000-01-01"
+                                            min="1900-01-01" max="2050-01-01" required>
+                                    </div>
+
                                 </div>
                             </section>
-                            <section class="form-section">
+                            <section class="wrapper__column  form-section">
                                 <h4>Your FeedBack</h4>
-                                <p>Rating</p>
-                                <label for="1">1</label>
-                                <input type="radio" name="1" id="1">
-                                <label for="2">2</label>
-                                <input type="radio" name="2" id="2">
-                                <label for="3">3</label>
-                                <input type="radio" name="3" id="3">
-                                <label for="4">4</label>
-                                <input type="radio" name="4" id="4">
-                                <label for="5">5</label>
-                                <input type="radio" name="5" id="5">
-                                <p>How did you find this website?</p>
-                                <label for="Email">Email:</label>
-                                <input type="email" name="Email" id="Email" placeholder="example@place.com">
-                                <label for="Date of birth">Date of birth:</label>
-                                <input type="date" name="Date of birth" id="Date of birth" placeholder="dd/mm/yyyy">
+
+                                <div class="wrapper__inline-start">
+                                    <div class="wrapper__column">
+                                        <div class="input">
+                                            <p>Rating</p>
+                                            <div class="wrapper__column-reverse">
+                                                <label for="1">1</label>
+                                                <input type="radio" name="rating" id="1">
+                                            </div>
+                                            <div class="wrapper__column-reverse">
+                                                <label for="2">2</label>
+                                                <input type="radio" name="rating" id="2">
+                                            </div>
+                                            <div class="wrapper__column-reverse">
+                                                <label for="3">3</label>
+                                                <input type="radio" name="rating" id="3">
+                                            </div>
+                                            <div class="wrapper__column-reverse">
+                                                <label for="4">4</label>
+                                                <input type="radio" name="rating" id="4">
+                                            </div>
+                                            <div class="wrapper__column-reverse">
+                                                <label for="5">5</label>
+                                                <input type="radio" name="rating" id="5">
+                                            </div>
+
+                                        </div>
+
+                                        <label type="select" for="selection">How did you find this website?</label>
+                                        <select name="selection" id="media-selection" required>
+                                            <option value="Facebook">GitHub</option>
+                                            <option value="Linkedin">LinkedIn</option>
+                                            <option value="Google">WebDev</option>
+                                            <option value="Friends">Google</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <label for="msg">Massage</label>
+                                    <textarea id="msg" name="msg" rows="6" cols="50">Your massage</textarea>
+                                </div>
                             </section>
+                            <div class="wrapper__inline">
+                                <button>Submit</button>
+                                <button>Reset</button>
+                            </div>
+
                 </form>
             </section>
         </div>
